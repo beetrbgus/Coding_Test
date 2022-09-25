@@ -15,6 +15,7 @@ public class P_87389_FindModIs1 {
      */
     public int solution(int n) {
         int answer = 2;
+
         while(true){
             if(n % answer == 1 ) {
                 break;
