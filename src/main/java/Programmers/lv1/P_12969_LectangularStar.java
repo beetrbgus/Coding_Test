@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12969_LectangularStar.java
 package Programmers.lv1;
+========
+package codingtest.lv1;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12969_LectangularStar.java
 
 import java.util.Scanner;
 import java.util.stream.IntStream;

@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12944_GetAverage.java
 package Programmers.lv1;
+========
+package codingtest.lv1;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12944_GetAverage.java
 
 /**
  *  평균 구하기

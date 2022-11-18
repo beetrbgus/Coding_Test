@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/practice/P_417609_SecondQuiz.java
 package Programmers.practice;
+========
+package codingtest.practice;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/practice/P_417609_SecondQuiz.java
 
 // challenge_id=2436
 /**

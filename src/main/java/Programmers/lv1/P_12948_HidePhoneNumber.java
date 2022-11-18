@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12948_HidePhoneNumber.java
 package Programmers.lv1;
+========
+package codingtest.lv1;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12948_HidePhoneNumber.java
 
 /**
  * 프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.

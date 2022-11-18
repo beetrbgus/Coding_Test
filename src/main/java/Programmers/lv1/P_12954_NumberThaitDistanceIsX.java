@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12954_NumberThaitDistanceIsX.java
 package Programmers.lv1;
+========
+package codingtest.lv1;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12954_NumberThaitDistanceIsX.java
 
 /**
  * 함수 solution은 정수 x와 자연수 n을 입력 받아,

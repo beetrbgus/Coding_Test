@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_86051_SumNotFoundedNumber.java
 package Programmers.lv1;
+========
+package codingtest.lv1;
+>>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_86051_SumNotFoundedNumber.java
 
 /**
  * 0부터 9까지의 숫자 중 일부가 들어있는 정수 배열 numbers가 매개변수로 주어집니다.

@@ -1,2 +1,3 @@
-rootProject.name = 'Programmers'
+rootProject.name = 'Coding_Test'
+include 'Programmer'
 
