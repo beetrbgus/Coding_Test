@@ -9,33 +9,35 @@ import java.util.Stack;
  * 문제링크 : <a href="https://www.acmicpc.net/problem/17413"> 단어 뒤집기2 </a>
  *
  */
-public class B_17413_ReverseWord2 {
-    Stack<Integer> tagStack = new Stack<>();
+public class B_17413_ReverseWord2_2 {
     Stack<Character> wordStack = new Stack<>();
-    StringBuilder stringBuilder = new StringBuilder();
+    StringBuilder result = new StringBuilder();
 
     public String solution(String input) {
-        char[] inputChars = input.toCharArray();
+        int tagIndex = 0;
+        boolean isInAngleBracket = false;
 
-        for (int i = 0; i < inputChars.length; i++) {
-            char inputChar = inputChars[i];
+        for (int i = 0; i < input.length(); i++) {
+            char inputChar = input.charAt(i);
 
             if(inputChar == '<') {
                 appendWord();
-                tagStack.push(i);
+                tagIndex = i;
+                isInAngleBracket = true;
             }else if(inputChar == '>'){
-                int tagIndex = tagStack.pop();
                 String substring;
 
-                if(i == inputChars.length -1) substring = input.substring(tagIndex);
+                if(i == input.length() -1) substring = input.substring(tagIndex);
                 else substring = input.substring(tagIndex, i+1);
 
-                stringBuilder.append(substring);
+                result.append(substring);
+                tagIndex = 0;
+                isInAngleBracket = false;
             }else {
-                if(tagStack.size() == 0) {
+                if(!isInAngleBracket) {
                     if(inputChar == ' ') {
                         appendWord();
-                        stringBuilder.append(" ");
+                        result.append(" ");
                     }else {
                         wordStack.push(inputChar);
                     }
@@ -44,15 +46,15 @@ public class B_17413_ReverseWord2 {
 
         }
         appendWord();
-        return stringBuilder.toString();
+        return result.toString();
     }
     public void appendWord() {
         while(!wordStack.empty()) {
-            stringBuilder.append(wordStack.pop());
+            result.append(wordStack.pop());
         }
     }
     public static void main(String[] args) throws IOException {
-        B_17413_ReverseWord2 reverseWord = new B_17413_ReverseWord2();
+        B_17413_ReverseWord2_2 reverseWord = new B_17413_ReverseWord2_2();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String solution = reverseWord.solution(reader.readLine());
         System.out.println(solution);
