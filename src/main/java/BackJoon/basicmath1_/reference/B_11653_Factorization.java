@@ -11,14 +11,15 @@ import java.io.InputStreamReader;
  */
 public class B_11653_Factorization {
     /**
-     * 작은 수가 앞에 나와야 하니까 해당 수
-     *
+     * 작은 수가 앞에 나와야 하니까 해당 수로 나누어 지지 않는다면 수를 높임.
+     * cnt 보다 작다면 멈춤.
      * @param input
      * @return
      */
     public static void solution(int input) {
         int cnt = 2;
-        while(input > 1) {
+        if(input == 2) System.out.println(input);
+        while(input > cnt) {
             if(input % cnt == 0) {
                 input /= cnt;
                 System.out.println(cnt);
