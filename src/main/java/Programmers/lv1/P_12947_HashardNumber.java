@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12947_HashardNumber.java
 package Programmers.lv1;
-========
-package codingtest.lv1;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12947_HashardNumber.java
 
 /**
  * 하샤드 수
