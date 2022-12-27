@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_70128_DotProduct.java
 package Programmers.lv1;
-========
-package codingtest.lv1;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_70128_DotProduct.java
 
 /**
  * 길이가 같은 두 1차원 정수 배열 a, b가 매개변수로 주어집니다.

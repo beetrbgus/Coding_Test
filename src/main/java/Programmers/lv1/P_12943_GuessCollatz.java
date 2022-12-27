@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_12943_GuessCollatz.java
 package Programmers.lv1;
-========
-package codingtest.lv1;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_12943_GuessCollatz.java
+
 
 /**
  * 1937년 Collatz란 사람에 의해 제기된 이 추측은,

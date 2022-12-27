@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/lv1/P_87389_FindModIs1.java
 package Programmers.lv1;
-========
-package codingtest.lv1;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv1/P_87389_FindModIs1.java
 
 /**
  * 자연수 n이 매개변수로 주어집니다.

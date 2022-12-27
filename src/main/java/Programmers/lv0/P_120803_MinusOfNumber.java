@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/lv0/P_120803_MinusOfNumber.java
 package Programmers.lv0;
-========
-package codingtest.lv0;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/lv0/P_120803_MinusOfNumber.java
 
 /**
  * 정수 num1과 num2가 주어질 때,

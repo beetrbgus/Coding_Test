@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/practice/P_417589_MakeOne.java
 package Programmers.practice;
-========
-package codingtest.practice;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/practice/P_417589_MakeOne.java
 
 public class P_417589_MakeOne {
     public int solution(int num2) {

@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/Programmers/practice/P_417609_FirstQuiz.java
 package Programmers.practice;
-========
-package codingtest.practice;
->>>>>>>> origin/main:Programmer/src/main/java/codingtest/practice/P_417609_FirstQuiz.java
 
 import java.util.Scanner;
 // 별 찍기
