@@ -12,7 +12,7 @@ public class P_12939_MaxAndMin {
     /**
      * 둘 이상의 정수가 있기 때문에
      * 최대, 최소값을 미리 초기화 해놓고
-     * 수 비교해가면서 max, min을
+     * 수 비교해가면서 max, min을 구함.
      */
     public static String solution(String s) {
         String[] sArr= s.split(" ");
