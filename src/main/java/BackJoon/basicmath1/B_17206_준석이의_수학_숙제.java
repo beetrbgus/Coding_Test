@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * https://www.acmicpc.net/problem/17206
+ * <a href="https://www.acmicpc.net/problem/17206">준석이의 수학 숙제</a>
  */
 public class B_17206_준석이의_수학_숙제 {
     /**
@@ -29,5 +29,4 @@ public class B_17206_준석이의_수학_숙제 {
     public static int sumArithmeticSequence(int n, int firstNum, int sequence) {
         return n * (2*firstNum + (n-1) * sequence) / 2;
     }
-
 }
