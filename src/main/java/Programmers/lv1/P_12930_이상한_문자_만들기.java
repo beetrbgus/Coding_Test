@@ -6,27 +6,17 @@ package Programmers.lv1;
 public class P_12930_이상한_문자_만들기 {
     public static String solution(String s) {
         StringBuilder sb = new StringBuilder();
-        String[] sArr = s.split(" ");
-        for(int i=0;i<sArr.length;i++) {
-            char[] sCharArr = sArr[i].toCharArray();
-
-            for(int j=0;j<sCharArr.length;j++) {
-                char sChar = sCharArr[j];
-                boolean isLower = sChar >= 'a';
-                if(j%2==0) {
-                    if(isLower) {
-                        sChar -= 32;
-                    }
-                }else {
-                    if(!isLower) {
-                        sChar += 32;
-                    }
-                }
-                sb.append(sChar);
+        int index = 0;
+        for(int i=0;i<s.length();i++) {
+            char charAt = s.charAt(i);
+            if(charAt == ' ') {
+                index = 0;
+                sb.append(charAt);
+                continue;
             }
-            if(i < sArr.length-1) {
-                sb.append(" ");
-            }
+            charAt = (index % 2 == 0) ? charAt = Character.toUpperCase(charAt) : Character.toLowerCase(charAt);
+            sb.append(charAt);
+            index++;
         }
         return sb.toString();
     }
