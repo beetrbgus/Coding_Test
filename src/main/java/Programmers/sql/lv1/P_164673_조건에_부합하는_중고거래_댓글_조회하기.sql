@@ -1,0 +1,46 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/164673
+SELECT * FROM USED_GOODS_BOARD; -- 중고 거래 게시판 정보
+SELECT * FROM USED_GOODS_REPLY; -- 첨부파일 정보
+
+-- 1. 테이블 조인하기
+SELECT
+    *
+FROM
+    USED_GOODS_BOARD B
+INNER JOIN
+   USED_GOODS_REPLY R
+ON
+   B.BOARD_ID = R.BOARD_ID;
+
+-- 2. 22년 10월의 게시물 조회하기
+SELECT
+    *
+FROM
+    USED_GOODS_BOARD B
+INNER JOIN
+    USED_GOODS_REPLY R
+ON
+    B.BOARD_ID = R.BOARD_ID;
+WHERE
+    B.CREATED_DATE LIKE '2022-10-%'
+
+-- 3. 컬럼들 + 정렬 조건
+SELECT
+    B.TITLE,
+    B.BOARD_ID,
+    R.REPLY_ID,
+    R.WRITER_ID,
+    R.CONTENTS,
+    DATE_FORMAT(R.CREATED_DATE, "%Y-%m-%d") AS CREATED_DATE
+FROM
+    USED_GOODS_BOARD B
+INNER JOIN
+    USED_GOODS_REPLY R
+ON
+    B.BOARD_ID = R.BOARD_ID
+WHERE
+    B.CREATED_DATE LIKE '2022-10-%'
+ORDER BY
+    R.CREATED_DATE ASC,
+    B.TITLE ASC
+;
