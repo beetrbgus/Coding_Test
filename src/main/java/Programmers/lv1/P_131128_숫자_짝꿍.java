@@ -53,9 +53,30 @@ public class P_131128_숫자_짝꿍 {
         }
         return sb.toString().length() !=0 ? sb.toString() : "-1";
     }
-    // 공통적으로 나타나는 숫자 구하기
-    public static void commonNumber(char[] xArr, char[] yArr) {
+    // Map을 사용하는 것보다 고정 배열을 선택하는 것이 훨씬 더 나음
+    public static String solution2(String X, String Y) {
+        StringBuilder answer = new StringBuilder();
+        int[] x = {0,0,0,0,0,0,0,0,0,0};
+        int[] y = {0,0,0,0,0,0,0,0,0,0};
+        for(int i=0; i<X.length();i++){
+            x[X.charAt(i)-48] += 1;
+        }
+        for(int i=0; i<Y.length();i++){
+            y[Y.charAt(i)-48] += 1;
+        }
 
+        for(int i=9; i >= 0; i--){
+            for(int j=0; j<Math.min(x[i],y[i]); j++){
+                answer.append(i);
+            }
+        }
+        if("".equals(answer.toString())){
+            return "-1";
+        }else if(answer.toString().charAt(0)==48){
+            return "0";
+        }else {
+            return answer.toString();
+        }
     }
 
     public static void main(String[] args) throws IOException {
