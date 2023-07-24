@@ -7,10 +7,14 @@ import java.util.stream.IntStream;
  */
 public class P_181838_날짜_비교하기 {
     public static int solution(int[] date1, int[] date2) {
-        return IntStream.range(0, date1.length)
-                .filter(i -> date1[i] > date2[i])
-                .findFirst()
-                .orElse(0) != 0 ? 1 : 0;
+        for (int i = 0; i < date1.length; i++) {
+            if(date1[i] < date2[i]) {
+                return 1;
+            } else if (date1[i] > date2[i]) {
+                return 0;
+            }
+        }
+        return 0;
     }
     public static void main(String[] args) {
         int[] date1 = {2021, 12, 28};
