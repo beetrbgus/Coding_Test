@@ -22,7 +22,12 @@ public class P_181919_콜라츠_수열_만들기 {
         return answer;
     }
     public int[] streamSolution(int n) {
-        return Stream.iterate(n, i -> i >= 1, i -> i == 1 ? 0 : i % 2 == 0 ? i / 2 : 3 * i + 1).mapToInt(Integer::intValue).toArray();
+        return Stream.iterate(n, i ->
+                    i >= 1,
+                    i -> i == 1 ? 0 :
+                            i % 2 == 0 ? i / 2 : 3 * i + 1
+                )
+                .mapToInt(Integer::intValue).toArray();
     }
     public static void main(String[] args) {
         int n = 10;
