@@ -26,6 +26,24 @@ public class P_42576_완주하지_못한_선수 {
         }
         return answer;
     }
+    
+    // 개선된 해결 방안
+    public static String solution2(String[] participant, String[] completion) {
+        Map<String, Integer> hashMap = new HashMap<>();
+        // 완주 선수들 이름 저장
+        for (String maratonerName : completion) {
+            hashMap.put(maratonerName, hashMap.getOrDefault(maratonerName, 0) + 1);
+        }
+
+        for (String maratonerName : participant) {
+            // 완주하지 못한 선수 찾으면 반환
+            if(hashMap.getOrDefault(maratonerName, 0) == 0) {
+                return maratonerName;
+            }
+            hashMap.put(maratonerName, hashMap.get(maratonerName) - 1);
+        }
+        return null;
+    }
     public static void main(String[] args) {
         String[] participant = {"leo", "kiki", "eden"};
         String[] completion = {"eden", "kiki"};
