@@ -1,0 +1,7 @@
+--  https://school.programmers.co.kr/learn/courses/30/lessons/273709
+
+SELECT
+    SUM(PRICE) as TOTAL_PRICE
+FROM ITEM_INFO
+GROUP BY RARITY
+HAVING RARITY = 'LEGEND';
