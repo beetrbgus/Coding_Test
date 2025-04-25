@@ -1,4 +1,4 @@
-package BackJoon.올림피아드;
+package BackJoon.기업_알고리즘_테스트_유형;
 
 import java.io.BufferedReader;
 import java.io.IOException;
